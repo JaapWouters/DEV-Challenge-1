@@ -1,0 +1,62 @@
+.sony{
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 10rem;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+
+    /* Fade in */
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation: fadein 11s linear;
+    -webkit-animation: fadein 11s linear;
+
+    /* Zoom in */
+    animation-delay: 11s;
+    -webkit-animation-delay: 11s;
+    animation: zoom-in 10s linear;
+    -webkit-animation: zoom-in 10s linear;
+}
+
+    /* Fade in */
+    @keyframes fadein {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadein {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+  
+    /* Zoom in */
+    @keyframes zoom-in{
+        0% {
+        transform: scale(1);
+        }
+        100% {
+        transform: scale(10);
+        }
+        }
+    
+        @-webkit-keyframes zoom-in{
+        0% {
+        transform: scale(1);
+        }
+        100% {
+        transform: scale(10);
+        }
+        }

@@ -1,0 +1,143 @@
+body {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar { display: none; }
+
+.customization {
+	color: white;
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 10%;
+	display: block;
+	text-decoration: none;
+}
+a{
+	color:crimson;
+	text-decoration: none;
+	transition: 450ms;
+}
+
+a:hover{
+	transform: scale(1.2);
+}
+
+h2 {
+	display: flex;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.button {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+	display: flex;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.button:hover{
+	cursor: pointer;
+}
+
+.textfield {
+	display: flex;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.women img{
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* opacity: 0; */
+	animation: fadeIn2 27s;
+}
+
+.sony {
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+	font-size: 10rem;
+	display: flex;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 40%;
+ 	letter-spacing: 20px;
+	animation: fadeIn 20s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.4;
+	}
+	15% {
+		opacity: 0.6;
+	}
+	25% {
+		opacity: 0.8;
+	}
+	31% {
+		transform: scale(1);
+	}
+	98% {
+		transform: scale(15);
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		z-index: -1;
+	}
+}
+
+@keyframes fadeIn2 {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	31% {
+		transform: scale(13);
+	}
+	99% {
+		transform: scale(1);
+	}
+	100% {
+		z-index: 1;
+	}
+}
